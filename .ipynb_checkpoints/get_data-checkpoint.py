@@ -55,7 +55,7 @@ for i,entry in enumerate(data['dataset']):
                 print(i,"file could not be loaded")
 
     print(i)
-    break
+    
     
 
 #and the file with all the relevant metadata is saved here
