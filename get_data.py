@@ -25,7 +25,11 @@ data = json.load(json_url)
 list_data=[]
 for i,entry in enumerate(data['dataset']):
     #get for every dataset the urlname that is written in the respective node
-    urlname=entry['distribution'][0]['downloadUrl']
+    try:
+        urlname=entry['distribution'][0]['downloadUrl']
+    except:
+        print("exception ocurred: no downloadurl in exected format")
+        continue
     if urlname is not None:
         #select only the csv files, as there are also other kind of files
         if urlname[-4:]==".csv":
