@@ -32,7 +32,10 @@ Der gesamte Datenkatalog der offenen Behördendaten des Kantons Zürich steht f�
 
 Das JSON beschreibt jeden Datensatz und listet die zum Datensatz gehörigen Distributionen (= Ressource = Indikator = CSV). Für jede Distribution gibt es eine **downloadUrl**, die den Permalink zum Datenfile (CSV) darstellt.
 
-Wie das JSON gefiltert und die relevanten Informationen extrahiert werden können, ist im R-Skript [`get_data.R`](https://github.com/statistikZH/API_Gemeindeportraet/blob/main/get_data.R) dokumentiert.
+Wie das JSON gefiltert und die relevanten Informationen extrahiert werden können, ist im **R-Skript [`get_data.R`](https://github.com/statistikZH/API_Gemeindeportraet/blob/main/get_data.R)** dokumentiert.
 
-### Beispiel praktische Anwendung
-Wie dies in der Praxis angewendet werden kann, wird in diesem [**Observable Notebook**](https://observablehq.com/@statistikzh/gemeindeportrat-data-access) Schritt für Schritt erklärt und unter «3. Daten visualisieren» sogar visualisiert.
+### Vorlagen für Visualisierungen
+
+1. Datenbezug ab JSON Schritt für Schritt erklärt und unter «3. Daten visualisieren» sogar visualisiert: [**Observable Notebook**](https://observablehq.com/@statistikzh/gemeindeportrat-data-access)
+
+2. Vorlage für Karten mit Daten aus dem Gemeindeporträt, die auf Basis der Liste der Indikatoren mit Download-URLs: [**Observable Notebook**](https://observablehq.com/d/b53b20bfd07349f0)
