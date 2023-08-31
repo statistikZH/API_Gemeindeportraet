@@ -14,6 +14,8 @@ Für Nutzende, die selbst auf die Daten im Sinne von Abfragen zugreifen möchten
 ## Dieses Repository
 Mit diesem Repository zeigen wir Nutzenden, wie sie systematisch auf die Datensätze des Gemeindeportraits zugreifen können und bieten die Möglichkeit, eine Liste aller Indikatoren mit den entsprechenden Download-URLs zu erhalten. 
 
+> [Liste der Indikatoren mit Download-URLs](https://github.com/statistikZH/API_Gemeindeportraet/blob/main/output/gpzh_dataset_overview.csv)
+
 Auf Basis dieser Liste, die über die Zugangs-URL direkt in Anwendungen geladen werden kann, lassen sich dann z.B. Visualisierungen erstellen. 
 
 Die Logik ist:
