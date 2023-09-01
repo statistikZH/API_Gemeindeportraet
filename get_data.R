@@ -23,7 +23,11 @@ dataset_data <- gpzh_only %>%
                 theme = dataset.theme,
                 start_date = dataset.startDate,
                 end_date =dataset.endDate
-                )
+                ) %>%
+  # Manual correction, as two records deviate from the logic of the other records when naming dataset and resource title.
+  dplyr::mutate(title = dplyr::case_when(title == "Anteil Gemeinnützige Wohnungen in Gemeinden des Kantons Zürich [%]" ~ "Anteil Gemeinnützige Wohnungen [%]",
+                                         title == "Gemeinnützige Wohnungen in Gemeinden des Kantons Zürich [Anz.]" ~ 	"Gemeinnützige Wohnungen [Anz.]",
+                                         TRUE ~ title))
 
 # Retrieve further information on the distribution stored on the second level of the nested json
 distibution_data <- as.data.frame(do.call(rbind, gpzh_only$dataset.distribution)) %>%
